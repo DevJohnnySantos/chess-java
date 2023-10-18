@@ -1,4 +1,4 @@
-package bordergame;
+package boardergame;
 
 public class Position {
     private int row;
