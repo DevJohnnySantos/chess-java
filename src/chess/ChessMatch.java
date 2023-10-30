@@ -14,14 +14,14 @@ public class ChessMatch {
     }
 
     public ChessPiece[][] getPieces() {
-        ChessPiece[][] matt = new ChessPiece[board.getRows()][board.getColumns()];
-        for (int i = 0; i < board.getRows(); i++) {
-            for (int j = 0; j < board.getColumns(); j++) {
-                matt[i][j] = (ChessPiece) board.piece(i, j);
+        ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()];
+        for (int i=0; i<board.getRows(); i++) {
+            for (int j=0; j<board.getColumns(); j++) {
+                mat[i][j] = (ChessPiece) board.piece(i,j);
 
             }
         }
-        return matt;
+        return mat;
     }
     private  void initialStup(){
         board.placePiece(new Rook(board, Color.White), new Position(2,1));
